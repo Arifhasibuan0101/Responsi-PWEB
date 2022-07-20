@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TUGAS AKHIR KALKULATOR</title>
+  <link href="kalkulator.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="kalkulator-container">
+    <form name="kalkulator">
+      <h3 class="kalkulator-container">KALKULATOR TUGAS AKHIR</h3>
+
+      <input type="text" name="text"
+      class="text" id="input">
+      <br>
+
+      <input class="button blue" id="del" type="button" value="DEL" onclick="clearMe()">
+      <input class="button grey" type="button" value="%" onclick="insert('%')">
+      <input class="button grey" type="button" value="+" onclick="insert('+')">
+      <br>
+
+      <input class="button black" type="button" value="7" onclick="insert(7)">
+      <input class="button black" type="button" value="8" onclick="insert(8)">
+      <input class="button black" type="button" value="9" onclick="insert(9)">
+      <input class="button grey" type="button" value="-" onclick="insert('-')">
+      <br>
+
+      <input class="button black" type="button" value="4" onclick="insert(4)">
+      <input class="button black" type="button" value="5" onclick="insert(5)">
+      <input class="button black" type="button" value="6" onclick="insert(6)">
+      <input class="button grey" type="button" value="x" onclick="insert('*')">
+      <br>
+
+      <input class="button black" type="button" value="1" onclick="insert(1)">
+      <input class="button black" type="button" value="2" onclick="insert(2)">
+      <input class="button black" type="button" value="3" onclick="insert(3)">
+      <input class="button grey" type="button" value="/" onclick="insert('/')">
+      <br>
+
+      <input class="button black" id="zero" type="button" value="0" onclick="insert(0)">
+      <input class="button black" type="button" value="." onclick="insert('.')">
+      <input class="button green" type="button" value="=" onclick="equal()">
+
+    </form>
+  </div>
+  <div align="center"><strong><a href="lihat.php"><br>::KEMBALI::</a></strong></div>
+  <script src="kalkulator.js"></script>
+</body>
+
+</html>

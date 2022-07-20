@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buku Tamu | Arif Sa'banna Hasibuan</title>
+	<link rel="stylesheet" type="text/css" href="bukutamu.css">
+</head>
+<body>
+		<div class="container">
+			<h1>Buku Tamu</h1>
+			<form action="proses.php" method="POST">
+			<table>
+				<tr>
+					<td>Nama Lengkap</td>
+					<td>:</td>
+					<td><input type="text" name="nama_lengkap"></td>
+				</tr>
+				<tr>
+					<td>Alamat</td>
+					<td>:</td>
+					<td><textarea name="alamat"></textarea></td>
+				</tr>
+				<tr>
+					<td>Tempat Lahir</td>
+					<td>:</td>
+					<td><input type="text" name="tempat_lahir"></td>
+				</tr>
+				<tr>
+					<td>Tanggal Lahir</td>
+					<td>:</td>
+					<td><input type="date" name="tanggal_lahir"></td>
+				</tr>
+				<tr>
+					<td>Jenis Kelamin</td>
+					<td>:</td>
+					<td>
+						<input type="radio" name="jk" value="Laki-laki"> Laki-laki
+						<input type="radio" name="jk" value="Perempuan"> Perempuan
+					</td>
+				</tr>
+				<tr>
+					<td>Agama</td>
+					<td>:</td>
+					<td>
+						<select name="agama">
+							<center>
+							<option selected="Select">* Pilih *</option>
+							</center>
+							<option value="Islam"> Islam </option>
+							<option value="Katolik"> Katolik </option>
+							<option value="Kristen"> Kristen </option>
+							<option value="Hindu"> Hindu </option>
+							<option value="Budha"> Budha </option>
+							<option value="Khonghucu"> Khonghucu </option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>No Telepon</td>
+					<td>:</td>
+					<td><input type="text" name="no_telepon"></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>:</td>
+					<td><input type="text" name="email"></td>
+				</tr>
+				<tr>
+					<td>Sosial Media</td>
+					<td>:</td>
+					<td>
+					<td><br>Facebook<input type="text" name="sosial"></td>
+					<td><br>Twitter<input type="text" name="sosial"></td>
+					<td><br>Instagram<input type="text" name="sosial"></td>
+				</tr>
+				<td></td>
+				<td></td>
+				<td>
+					<button type="submit" name="kirim">Kirim</button>
+					<button type="submit" name="reset">Reset</button>
+				</td>
+			</table>
+			</form>
+			<div align="center"><strong><a href="lihat.php">::Lihat Buku Tamu::</a></strong></div>
+			<div align="center"><strong><a href="home.html">::Kembali ke Home::</a></strong></div>
+		</div>
+	</div>
+</body>
+</html>
